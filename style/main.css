@@ -1,0 +1,339 @@
+html{
+    scroll-behavior: smooth;    
+}
+body {
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 26px;
+}
+a {
+  text-decoration: none;
+}
+.button {
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 40px;
+    border: 2px solid white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button:hover{
+    text-decoration: underline;
+}
+a, h1, h2, h3 {
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.90);
+    top: 0px;
+    transition: top 0.3s;
+    z-index: 1000;
+
+}
+header::after {
+        content: '';
+        position: absolute;
+        left: 2.5vw;
+        top: 70px;
+        width: 95%;
+        height: 1px;
+        background-color: #333;
+}
+@media screen and (max-width: 767px) {
+    header {
+        height: 64px;
+    }
+    header::after {
+        display: none;
+    }
+}
+
+
+
+body::after {
+        content: '';
+        top: 0;
+        position: absolute;
+        width: 100%; /* Largeur de la bordure */
+        height: 150px; /* Épaisseur de la bordure */
+        background-color: black; /* Couleur de la bordure */
+        z-index: -1;
+}
+@media screen and (max-width: 767px) {
+    body::after {
+        height: 64px;
+    }
+}
+header h1 {
+    font-size: 36px;
+    color: white;
+    font-family: 'Cinzel', sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 767px) {
+    header h1 {
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 325px) {
+    header h1 {
+        top: 14px;
+        font-size: 23px;
+        margin-left: 12px;
+    }
+
+}
+
+
+header a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    position: relative; /* Position relative pour placer le trait par rapport au lien */
+}
+
+header a::after, header a:hover::after {
+    content: ''; /* Ajoute un contenu pseudo-élément */
+    position: absolute; /* Position absolue par rapport au lien */
+    bottom: -3px; /* Place le trait juste en dessous du texte du lien */
+    left: 0; /* Alignement initial à gauche */
+    right: 0; /* Alignement final à droite */
+    margin: 0 auto; /* Centre horizontalement le trait */
+    width: 30px; /* Longueur du trait */
+    border-bottom: 2px solid; /* Épaisseur et style du trait (2px d'épaisseur, solide) */
+    transition: width 0.3s; /* Transition de la largeur du trait sur une durée de 0.3 seconde */
+}
+header a::after{
+    width: 0px;
+}
+
+main {
+    margin: 0px;
+    top: 150px; 
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+@media screen and (max-width: 767px) {
+    main {
+        top: 64px;
+    }
+}
+
+
+
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    display: none; /* Masquer l'icône du menu par défaut sur les écrans larges */
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    transition: heigth 0.3s;
+    display: flex;
+}
+.menu li {
+    margin-right: 20px;
+}
+.menu li:last-child {
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        background-color: black;
+    }
+    .main-nav {
+        height: 32px;
+        margin-top: 10px;
+        margin-left: 10vw;
+        transform: none;
+        position: static;
+    }
+    .menu {
+        display: none; /* Masquer le menu par défaut sur les écrans étroits */
+        flex-direction: column;
+        position: absolute;
+        top: 32px;
+        left: 0px;
+        width: 100%;
+        background-color: black;
+    }
+    .menu li {
+        padding: 10px;
+        padding-top: 0;
+        padding-left: 0;
+        margin-left: 10vw;
+    }
+    .menu a {
+        font-size: 12px;
+    }
+    .menu.show {
+        display: flex; /* Afficher le menu lorsque la classe .show est ajoutée */
+    }
+    .menu-icon {
+        display: block; /* Afficher l'icône du menu sur les écrans étroits */
+    }
+    .menu li::after {
+        content: '';
+        position: absolute;
+        left: 10vw;
+        width: 80%;
+        height: 1px;
+        background-color: #333;
+    }
+}
+
+
+
+article {
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+article h1, article h2, article h3 {
+    color: #333;
+}
+article h2 {
+    font-size: 34px;
+    padding-top: 34px;
+}
+@media screen and (max-width: 800px) {
+    article {
+        margin: 10vw;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+article img {
+    width: 100%;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+article h1 {
+    padding-bottom: 32px;
+}
+.indentation {
+  text-indent: 2em;
+}
+
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+
+
+.fixed-img {
+    background-image: url('../img/footer.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+}
+footer {
+   background-color: black;
+    color: white;
+    padding: 30px 0;
+    padding-top: 0px;
+    z-index: 10;
+    font-family: 'roboto';
+    font-size: 18px;
+    overflow: hidden;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 12px;
+  }
+  .footer-content {
+    display: block;
+  }
+}
+
+.footer-section {
+    flex: 1;
+    margin: 5vw;
+}
+
+.footer-section h3 {
+    color: #fff;
+}
+
+.footer-section p {
+    color: #ddd;
+}
+.footer-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-section li {
+    padding-top: 5px;
+}
+.footer-section a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s;
+}
+.footer-section h3 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-section a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    color: #ddd;
+}
+.footer-bottom::after {
+    content: '';
+    position: absolute;
+    left: 2.5vw;
+    top: 0px;
+    width: 95%;
+    height: 1px;
+    background-color: #333;
+}

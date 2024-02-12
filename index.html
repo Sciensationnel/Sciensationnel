@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+    <title>Sciensationnel</title>
+</head>
+<body>
+    <header id="main-header">
+    <h1>Sciensationnel</h1>
+        <nav class="main-nav">
+        <div class="menu-icon">&#9776;</div>
+        <ul class="menu">
+            <li><a href="#articles">DECOUVRIR</a></li>
+            <li><a href="#">ACCUEIL</a></li>
+            <li><a href="#about">À PROPOS</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <div class="video-container" id="video-container">
+            <video autoplay loop muted>
+                <source src="video.webm" type="video/webm">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-content">
+                <p>"Quand la science rencontre l'art : une exploration inspirante..."</p>
+            </div>
+            <div class="overlay"></div>            
+        </div>
+
+        <div class="quotation">
+        <p>"Plongez dans un voyage captivant et explorez l'union harmonieuse entre la rigueur scientifique et la créativité artistique, révélant des liens insoupçonnés entre les sciences et l'art."</p>
+        </div>
+
+        <div class="carousel-container">
+            <img src="" class="carousel-image" id="currentImage" />
+            <img src="" class="carousel-image2" id="lastImage"/>
+
+            <div id="article_infos" class="article-infos">
+                <h2 id="article_title"></h2>
+                <p id="article_resume"></p>
+                <a id="article_link" class="button" href="">Lire l'article</a>
+            </div>
+        </div>
+
+        <!-- Articles -->
+        <div id="articles" class="articles">
+            <div class="article-grid">
+                <h2>Explorez ces toiles mytiques accompagné de votre sens aussi bien phyisque que critique !</h2>
+                <a href="articles/article 1/article.html" class="article-item">
+                  <img src="articles/article 1/img/img.png" alt="article 1">
+                  <div class="article-info">
+                    <h3 class="article-title">Monet et les Ultraviolets</h3>
+                    <p class="article-description">Découvrez comment l'intervention chirurgicale de Claude Monet a transformé sa vision artistique. Dans cet article, explorez les liens entre science et art, et plongez dans les secrets derrière ses derniers chefs-d'œuvre impressionnistes.</p>
+                  </div>
+                </a>
+                <a href="articles/article 3/article.html" class="article-item">
+                  <img src="articles/article 3/img/img.png" alt="article 1">
+                  <div class="article-info">
+                    <h3 class="article-title">Que peut-on récupérer sur une telle croûte dorée ?</h3>
+                    <p class="article-description">Avouons que 'Le Baiser' de Klimt est une œuvre plutôt disgracieuse, mais que faire ? Et si nous tentions de récupérer l’or qui tapisse cette croûte... Et si nous faisions appelle à la chimie pour extraire ce qu’il peut être encore sauvé ?</p>
+                  </div>
+                </a>
+                <a href="articles/article 2/article.html" class="article-item">
+                  <img src="articles/article 2/img/img.png" alt="article 1">
+                  <div class="article-info">
+                    <h3 class="article-title">Un radeau qui prend l'eau ?</h3>
+                    <p class="article-description">Découvrez si le radeau du célèbre tableau de Delacroix aurait pu réellement flotter. Plongez dans une analyse scientifique captivante de la flottabilité du Radeau de la Méduse et explorez les mystères qui entourent cette œuvre d'art emblématique...</p>
+                  </div>
+                </a>
+                <a href="articles/article 4/article.html" class="article-item">
+                  <img src="articles/article 4/img/img.png" alt="article 1">
+                  <div class="article-info">
+                    <h3 class="article-title">Combien de temps pour se rencontrer ?</h3>
+                    <p class="article-description">Imaginons un monde parfait comme Michel-Ange nous le présente, allons plus loin, imaginons que cela s'applique à la phsique, imaginons que les frottements n'existent pas... Mais combien de temps faudrait-il pour que ces main puissent se rencontrer ?</p>
+                  </div>
+                </a>
+              </div>
+        </div>
+
+
+        <div class="text">
+        <h2>Qu'est-ce que ce projet ?</h2>
+        <p>Ce projet vise à explorer les liens profonds entre les sciences physiques et chimiques et l'art, en mettant en lumière les intersections fascinantes entre la rigueur analytique de la science et la créativité sans bornes de l'art. À travers une série d'œuvres d'art soigneusement sélectionnées et de concepts scientifiques fondamentaux, nous invitons à découvrir un univers où les équations et les pigments dansent ensemble, révélant une nouvelle perspective sur la beauté et la complexité du monde qui nous entoure. En transcendant les frontières disciplinaires, ce projet aspire à éveiller la curiosité, à stimuler l'imagination et à encourager la collaboration entre les esprits scientifiques et artistiques.
+        <br><br>
+        Bien conscient du désintérêt souvent affiché par la communauté scientifique envers les œuvres artistiques, ce projet se propose de démystifier l'art et d'en révéler les aspects cachés, susceptibles de captiver des esprits plus enclins à scruter les mystères de la matière que les détails d'une toile. Au-delà des couleurs et des formes, nous explorons ici une autre dimension de l'art, une dimension où les équations dansent avec les pigments, et où la logique interagit avec la créativité.
+        <br><br>
+        Ce n'est pas simplement une exploration artistique, mais une tentative de décodage, une invitation à regarder au-delà de l'esthétique pour découvrir les liens sous-jacents qui unissent l'art et la science.</p>
+        </div>
+
+
+        <footer id="footer">
+            <div class="fixed-img"></div> 
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>À PROPOS</h3>
+                    <p>Explorez les connexions entre sciences et arts !</p>
+                </div>
+                <div class="footer-section contact">
+                    <h3>CONTACT</h3>
+                    <p>Email : gael.maignan.pro@gmail.com<br>Tél : +33 6 74 42 36 37</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>LIENS</h3>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">À Propos</a></li>
+                        <li><a href="#">Politique de Confidentialité</a></li>
+                        <li><a href="#">Conditions d'Utilisation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="about" class="footer-bottom">
+                <p>&copy; 2024 Sciensationnel. Tous droits réservés.</p>
+            </div>
+        </footer>
+
+    </main>     
+</body>
+</html>
