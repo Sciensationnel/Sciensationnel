@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	let currentImageIndex = 0;
     const carouselImage = document.getElementById("currentImage");
     const carouselImage2 = document.getElementById("lastImage");
-    const duration = 5000;
+    const duration = 7500;
 
    	const links = Array.from(document.querySelectorAll('.article-grid a')).map(a => a.getAttribute('href'));
     const titles = Array.from(document.querySelectorAll('.article-info .article-title')).map(h3 => h3.textContent);

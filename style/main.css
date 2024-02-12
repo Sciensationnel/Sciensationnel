@@ -69,22 +69,23 @@ body::after {
         height: 64px;
     }
 }
-header h1 {
+header .title {
     font-size: 36px;
     color: white;
     font-family: 'Cinzel', sans-serif;
     position: absolute;
-    top: 10px;
+    top: 32px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 767px) {
-    header h1 {
+    header .title {
         font-size: 26px;
+        top: 27px;
     }
 }
 @media screen and (max-width: 325px) {
-    header h1 {
+    header .title {
         top: 14px;
         font-size: 23px;
         margin-left: 12px;
@@ -93,7 +94,7 @@ header h1 {
 }
 
 
-header a {
+header nav a {
     font-size: 18px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
@@ -102,7 +103,7 @@ header a {
     position: relative; /* Position relative pour placer le trait par rapport au lien */
 }
 
-header a::after, header a:hover::after {
+header nav a::after, header nav a:hover::after {
     content: ''; /* Ajoute un contenu pseudo-élément */
     position: absolute; /* Position absolue par rapport au lien */
     bottom: -3px; /* Place le trait juste en dessous du texte du lien */
@@ -113,7 +114,7 @@ header a::after, header a:hover::after {
     border-bottom: 2px solid; /* Épaisseur et style du trait (2px d'épaisseur, solide) */
     transition: width 0.3s; /* Transition de la largeur du trait sur une durée de 0.3 seconde */
 }
-header a::after{
+header nav a::after{
     width: 0px;
 }
 
