@@ -265,6 +265,14 @@ article h1 {
     background-position: center;
     background-attachment: fixed;
     height: 300px;
+    position: relative;
+}
+.fixed-img::after {
+content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
 }
 footer {
    background-color: black;
