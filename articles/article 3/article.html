@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="Sciensationnel - Que peut-on récupérer sur une telle croûte dorée ?" />
-    <meta property="og:description" content="Avouons que 'Le Baiser' de Klimt est une œuvre plutôt disgracieuse, mais que faire ? Et si nous tentions de récupérer l’or qui tapisse cette croûte..." />
-    <meta property="og:image" content="https://sciensationnel.github.io/Sciensationnel/articles/article%203/img/img.png" />
-    <meta property="og:url" content="https://sciensationnel.github.io/Sciensationnel/articles/article%203/article" />
-    
-    <link rel="stylesheet" href="../../style/main.css">
+    <meta property="og:title" content="Sciensationnel - Que peut-on récupérer sur une telle croûte dorée ?"/>
+    <meta property="og:description" content="Avouons que 'Le Baiser' de Klimt est une œuvre plutôt disgracieuse, mais que faire ? Et si nous tentions de récupérer l’or qui tapisse cette croûte..."/>
+    <meta property="og:image" content="https://sciensationnel.github.io/Sciensationnel/articles/article%203/img/img.png"/>
+    <meta property="og:url" content="https://sciensationnel.github.io/Sciensationnel/articles/article%203/article"/>
+
     <link rel="icon" href="../../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/article.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <script src="../../js/script.js"></script>
+    <script src="../../js/article.js"></script>
 
     <title>Sciensationnel</title>
 </head>
@@ -28,7 +32,7 @@
         <ul class="menu">
             <li><a href="../../index.html#articles">DECOUVRIR</a></li>
             <li><a href="../../index.html#">ACCUEIL</a></li>
-            <li><a href="#about">À PROPOS</a></li>
+            <li><a href="../../index.html#auteurs-section">À PROPOS</a></li>
         </ul>
     </nav>
     </header>
@@ -41,11 +45,15 @@
 
         <article>
             <h1>Que peut-on récupérer sur une telle croûte dorée ?</h1>
-            
+
+            <div class="meta">
+                <span class="authors" data-names="Gaël Maignan, Marie Dubois"></span>
+            </div>
+                        
             <!--<h2 id="section1">Introduction</h2>-->
             <p class="indentation">Le tableau "Le Baiser", chef-d'œuvre emblématique de l'artiste autrichien Gustav Klimt, est une œuvre d'une beauté envoûtante qui a captivé les spectateurs depuis sa création en 1907-1908. Cette toile, qui fait partie du mouvement symboliste et de la période dorée de Klimt, illustre un couple enlacé dans une étreinte passionnée, entouré d'une aura dorée et de motifs décoratifs complexes. "Le Baiser" incarne l'esthétique somptueuse et sensuelle de Klimt, mêlant l'ornementation luxuriante et les symboliques mystiques pour créer une œuvre d'art d'une puissance évocatrice inégalée.
             <br><br>
-            Au-delà de sa beauté esthétique, "Le Baiser" de Klimt suscite également l'intérêt en raison de sa riche utilisation de l'or, qui orne abondamment la toile sous forme de feuilles d'or et de peinture dorée. Cette utilisation de l'or soulève une question intrigante : est-il possible d'extraire l'or de cette œuvre d'art ? Dans cette étude, nous explorerons cette possibilité en évaluant la quantité d'or présente sur le tableau, en examinant les réactions chimiques et les procédés qui pourraient permettre son extraction, et en discutant des limites et des considérations éthiques associées à une telle entreprise.
+            Au-delà de sa beauté esthétique, "Le Baiser" de Klimt suscite également l'intérêt en raison de sa riche utilisation de l'or, qui orne abondamment la toile sous forme de feuilles d'or et de peinture dorée. Cette utilisation de l'or soulève une question intrigante : est-il possible d'extraire l'or de cette œuvre d'art ? Dans cette étude, nous explorerons cette possibilité en évaluant la quantité d'or présente sur le tableau, en examinant les réactions chimiques et les procédés qui pourraient permettre son extraction.
             </p>
 
 
@@ -78,23 +86,30 @@
 
         </article>
 
+        <section id="auteurs-section">
+        <h2 id="about_title">À propos de l'auteur</h2>
+        <div id="auteurs-container"></div>
+        </section>
         <footer id="footer">
             <div id="fixed-img" class="fixed-img"></div> 
             <div class="footer-content">
                 <div class="footer-section about">
                     <h3>À PROPOS</h3>
-                    <p>Explorez les connexions entre sciences et arts !</p>
+                    <ul>
+                        <li><p>Explorez les connexions entre sciences et arts !</p></li>
+                    </ul>
                 </div>
                 <div class="footer-section contact">
                     <h3>CONTACT</h3>
-                    <p>Email : gael.maignan.pro@gmail.com<br>Tél : +33 6 74 42 36 37</p>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/gael-maignan/">LinkedIn : Gaël MAIGNAN</a></li>
+                        <li><a href="mailto:gael.maignan.pro@gmail.com">Email : gael.maignan.pro@gmail.com</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section links">
                     <h3>LIENS</h3>
                     <ul>
                         <li><a href="../../index.html">Accueil</a></li>
-                        <li><a href="#">À Propos</a></li>
-                        <li><a href="#">Politique de Confidentialité</a></li>
                         <li><a href="#">Conditions d'Utilisation</a></li>
                     </ul>
                 </div>

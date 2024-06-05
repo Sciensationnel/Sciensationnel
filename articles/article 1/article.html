@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="Sciensationnel - Monet et les Ultraviolets" />
-    <meta property="og:description" content="Découvrez comment l'intervention chirurgicale de Claude Monet a transformé sa vision artistique." />
-    <meta property="og:image" content="https://sciensationnel.github.io/Sciensationnel/articles/article%201/img/img.png" />
-    <meta property="og:url" content="https://sciensationnel.github.io/Sciensationnel/articles/article%201/article" />
-    
+    <meta property="og:title" content="Sciensationnel - Monet et les Ultraviolets"/>
+    <meta property="og:description" content="Découvrez comment l'intervention chirurgicale de Claude Monet a transformé sa vision artistique."/>
+    <meta property="og:image" content="https://sciensationnel.github.io/Sciensationnel/articles/article%201/img/img.png"/>
+    <meta property="og:url" content="https://sciensationnel.github.io/Sciensationnel/articles/article%201/article"/>
+
     <link rel="icon" href="../../img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../style/main.css">
-    
+    <link rel="stylesheet" href="../../style/article.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <script src="../../js/script.js"></script>
+    <script src="../../js/article.js"></script>
 
     <title>Sciensationnel</title>
 </head>
@@ -29,7 +32,7 @@
         <ul class="menu">
             <li><a href="../../index.html#articles">DECOUVRIR</a></li>
             <li><a href="../../index.html#">ACCUEIL</a></li>
-            <li><a href="#about">À PROPOS</a></li>
+            <li><a href="../../index.html#auteurs-section">À PROPOS</a></li>
         </ul>
     </nav>
     </header>
@@ -42,6 +45,10 @@
 
         <article>
             <h1>Monet et les Ultraviolets</h1>
+
+            <div class="meta">
+                <span class="authors" data-names="Gaël Maignan"></span>
+            </div>
             
             <!--<h2 id="section1">Introduction</h2>-->
             <p class="indentation">Claude Monet, l'un des piliers du mouvement impressionniste du XIXe siècle, est célèbre pour ses représentations lumineuses et atmosphériques de paysages, de jardins et de scènes de la vie quotidienne. Né en 1840 à Paris, Monet a développé un style distinctif caractérisé par des coups de pinceau rapides, des tons de couleurs vibrants et une obsession pour la capture des effets de lumière naturelle. Son engagement envers l'observation directe de la nature et sa volonté d'expérimenter avec la perception visuelle ont profondément influencé l'histoire de l'art moderne.
@@ -90,27 +97,32 @@
             L'histoire de Monet illustre l'incroyable capacité de l'art à transcender les limitations physiques et à donner forme à la vision intérieure de l'artiste. Son exploration des couleurs, de la lumière et de la forme dans les dernières années de sa vie a ouvert de nouvelles voies pour l'art moderne, influençant des générations d'artistes à venir.
             <br><br>
             Alors que nous contemplons l'œuvre éblouissante de Monet, imprégnée de la luminosité de la nature et de la magie de la lumière, nous sommes rappelés de sa résilience face à l'adversité et de sa capacité inébranlable à voir la beauté dans le monde qui l'entoure. À travers ses toiles, Monet nous invite à voir au-delà des limites de notre vision physique et à contempler la splendeur infinie de la vie à travers les yeux d'un artiste.</p>
-
-
         </article>
 
+        <section id="auteurs-section">
+        <h2 id="about_title">À propos de l'auteur</h2>
+        <div id="auteurs-container"></div>
+        </section>
         <footer id="footer">
             <div id="fixed-img" class="fixed-img"></div> 
             <div class="footer-content">
                 <div class="footer-section about">
                     <h3>À PROPOS</h3>
-                    <p>Explorez les connexions entre sciences et arts !</p>
+                    <ul>
+                        <li><p>Explorez les connexions entre sciences et arts !</p></li>
+                    </ul>
                 </div>
                 <div class="footer-section contact">
                     <h3>CONTACT</h3>
-                    <p>Email : gael.maignan.pro@gmail.com<br>Tél : +33 6 74 42 36 37</p>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/gael-maignan/">LinkedIn : Gaël MAIGNAN</a></li>
+                        <li><a href="mailto:gael.maignan.pro@gmail.com">Email : gael.maignan.pro@gmail.com</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section links">
                     <h3>LIENS</h3>
                     <ul>
                         <li><a href="../../index.html">Accueil</a></li>
-                        <li><a href="#">À Propos</a></li>
-                        <li><a href="#">Politique de Confidentialité</a></li>
                         <li><a href="#">Conditions d'Utilisation</a></li>
                     </ul>
                 </div>
