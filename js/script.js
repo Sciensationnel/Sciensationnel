@@ -2,6 +2,8 @@ function replaceAll(originalString, search, replacement) {
     return originalString.split(search).join(replacement);
 }
 
+const email = "gael.maignan.pro[at]gmail.com"
+
 const root = 'https://sciensationnel.github.io/Sciensationnel/'
 
 const authors = [
@@ -11,7 +13,7 @@ const authors = [
         photo: root + "img/photo1.jpg",
         bio: "Actuellement étudiant, je m'efforce d'écrire sur mon temps libre.",
         linkedin: "https://www.linkedin.com/in/gael-maignan",
-        mail: "mailto:gael.maignan.pro[at]gmail.com"
+        mail: "mailto:" + email
     },
     {
         name: "Marie Dubois",
@@ -19,7 +21,7 @@ const authors = [
         photo: root + "img/photo2.jpg",
         bio: "Marie Dubois est une journaliste passionnée par la politique et les questions sociales. Elle a une expérience de 15 ans dans le journalisme d'investigation.",
         linkedin: "https://www.linkedin.com/in/gael-maignan",
-        mail: "mailto:gael.maignan.pro[at]gmail.com"
+        mail: "mailto:marie.dubois[at]gmail.com"
     },
     {
         name: "Paul Martin",
@@ -27,7 +29,7 @@ const authors = [
         photo: root + "img/photo3.jpg",
         bio: "Paul Martin est web Développeur dans les nouvelles technologies et l'innovation. Il écrit des articles depuis 10 ans et est reconnu pour ses analyses perspicaces.",
         linkedin: "https://www.linkedin.com/in/gael-maignan",
-        mail: "mailto:gael.maignan.pro[at]gmail.com"
+        mail: "mailto:paul.martin[at]gmail.com"
     }
 ];
 
@@ -56,6 +58,13 @@ function displayAuthorBadges(authors) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+
+    const emailLink = document.getElementById('email-link');
+        if (emailLink) {
+        const true_email = replaceAll(email, "[at]", "@")
+        emailLink.textContent = 'Email : ' + true_email;
+        emailLink.href = 'mailto:' + true_email;
+    }
 
     const menuIcon = document.querySelector('.menu-icon');
     const menu = document.querySelector('.menu');
