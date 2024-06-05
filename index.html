@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Sciensationnel"/>
+    <meta property="og:description" content="Plongez dans un voyage captivant et explorez l'union harmonieuse entre la rigueur scientifique et la créativité artistique, révélant des liens insoupçonnés entre l'art et la science"/>
+    <meta property="og:image" content="https://sciensationnel.github.io/Sciensationnel/img/home.jpg"/>
+    <meta property="og:url" content="https://sciensationnel.github.io/Sciensationnel" />
     
     <link rel="stylesheet" href="style/styles.css">
     <link rel="icon" href="img/icon.png" type="image/x-icon">
@@ -11,9 +16,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <script src="js/script.js"></script>
-    <script src="js/carousel.js"></script>
+    <script src="js/home.js"></script>
     <title>Sciensationnel</title>
 </head>
 <body>
@@ -24,7 +30,7 @@
         <ul class="menu">
             <li><a href="#articles">DECOUVRIR</a></li>
             <li><a href="#">ACCUEIL</a></li>
-            <li><a href="#about">À PROPOS</a></li>
+            <li><a href="#auteurs-section">À PROPOS</a></li>
         </ul>
     </nav>
     </header>
@@ -94,31 +100,38 @@
 
         <div class="text">
         <h2>Qu'est-ce que ce projet ?</h2>
-        <p>Ce projet vise à explorer les liens profonds entre les sciences physiques et chimiques et l'art, en mettant en lumière les intersections fascinantes entre la rigueur analytique de la science et la créativité sans bornes de l'art. À travers une série d'œuvres d'art soigneusement sélectionnées et de concepts scientifiques fondamentaux, nous invitons à découvrir un univers où les équations et les pigments dansent ensemble, révélant une nouvelle perspective sur la beauté et la complexité du monde qui nous entoure. En transcendant les frontières disciplinaires, ce projet aspire à éveiller la curiosité, à stimuler l'imagination et à encourager la collaboration entre les esprits scientifiques et artistiques.
+        <p class="indentation">Ce projet vise à explorer les liens profonds entre les sciences physiques et chimiques et l'art, en mettant en lumière les intersections fascinantes entre la rigueur analytique de la science et la créativité sans bornes de l'art. À travers une série d'œuvres d'art soigneusement sélectionnées et de concepts scientifiques fondamentaux, nous invitons à découvrir un univers où les équations et les pigments dansent ensemble, révélant une nouvelle perspective sur la beauté et la complexité du monde qui nous entoure. En transcendant les frontières disciplinaires, ce projet aspire à éveiller la curiosité, à stimuler l'imagination et à encourager la collaboration entre les esprits scientifiques et artistiques.
         <br><br>
         Bien conscient du désintérêt souvent affiché par la communauté scientifique envers les œuvres artistiques, ce projet se propose de démystifier l'art et d'en révéler les aspects cachés, susceptibles de captiver des esprits plus enclins à scruter les mystères de la matière que les détails d'une toile. Au-delà des couleurs et des formes, nous explorons ici une autre dimension de l'art, une dimension où les équations dansent avec les pigments, et où la logique interagit avec la créativité.
         <br><br>
         Ce n'est pas simplement une exploration artistique, mais une tentative de décodage, une invitation à regarder au-delà de l'esthétique pour découvrir les liens sous-jacents qui unissent l'art et la science.</p>
         </div>
 
+        <section id="auteurs-section">
+        <h2>Nos Auteurs</h2>
+        <div id="auteurs-container"></div>
+        </section>
 
         <footer id="footer">
             <div class="fixed-img"></div> 
             <div class="footer-content">
                 <div class="footer-section about">
                     <h3>À PROPOS</h3>
-                    <p>Explorez les connexions entre sciences et arts !</p>
+                    <ul>
+                        <li><p>Explorez les connexions entre sciences et arts !</p></li>
+                    </ul>
                 </div>
                 <div class="footer-section contact">
                     <h3>CONTACT</h3>
-                    <p>Email : gael.maignan.pro@gmail.com<br>Tél : +33 6 74 42 36 37</p>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/gael-maignan/">LinkedIn : Gaël MAIGNAN</a></li>
+                        <li><a href="mailto:gael.maignan.pro@gmail.com">Email : gael.maignan.pro@gmail.com</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section links">
                     <h3>LIENS</h3>
                     <ul>
                         <li><a href="#">Accueil</a></li>
-                        <li><a href="#">À Propos</a></li>
-                        <li><a href="#">Politique de Confidentialité</a></li>
                         <li><a href="#">Conditions d'Utilisation</a></li>
                     </ul>
                 </div>

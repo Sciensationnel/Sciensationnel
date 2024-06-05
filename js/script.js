@@ -1,3 +1,60 @@
+function replaceAll(originalString, search, replacement) {
+    return originalString.split(search).join(replacement);
+}
+
+const root = 'https://sciensationnel.github.io/Sciensationnel/'
+
+const authors = [
+    {
+        name: "Gaël Maignan",
+        status: "Étudiant en Licence d'Information-Communication",
+        photo: root + "img/photo1.jpg",
+        bio: "Actuellement étudiant, je m'efforce d'écrire sur mon temps libre.",
+        linkedin: "https://www.linkedin.com/in/gael-maignan",
+        mail: "mailto:gael.maignan.pro[at]gmail.com"
+    },
+    {
+        name: "Marie Dubois",
+        status: "Journaliste",
+        photo: root + "img/photo2.jpg",
+        bio: "Marie Dubois est une journaliste passionnée par la politique et les questions sociales. Elle a une expérience de 15 ans dans le journalisme d'investigation.",
+        linkedin: "https://www.linkedin.com/in/gael-maignan",
+        mail: "mailto:gael.maignan.pro[at]gmail.com"
+    },
+    {
+        name: "Paul Martin",
+        status: "Web Développeur",
+        photo: root + "img/photo3.jpg",
+        bio: "Paul Martin est web Développeur dans les nouvelles technologies et l'innovation. Il écrit des articles depuis 10 ans et est reconnu pour ses analyses perspicaces.",
+        linkedin: "https://www.linkedin.com/in/gael-maignan",
+        mail: "mailto:gael.maignan.pro[at]gmail.com"
+    }
+];
+
+
+function displayAuthorBadges(authors) {
+    const badgesContainer = document.getElementById('auteurs-container');
+    for (var i = 0; i < authors.length; i++) {
+        const author = authors[i];
+            badgesContainer.innerHTML += `
+            <div class="auteur-badge">
+                <img src="${author.photo}" alt="Photo de ${author.name}">
+                <h3>${author.name}</h3>
+                <p><strong>${author.status}</strong></p>
+                <p>${author.bio}</p>
+                <div class="contact-info-wrapper">
+                    <div class="contact-info">
+                        <a href="${replaceAll(author.mail, "[at]", "@")}"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="${author.linkedin}" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        `;
+        }
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const menuIcon = document.querySelector('.menu-icon');
